@@ -20,22 +20,22 @@ let numberList =`<ul class= "d-flex m-4 flex-wrap " >`;
 if((i %3 === 0 )  && (i %5 === 0) ){
     
             console.log("FizzBuzz");
-            numberList += `<li class="bg-white text-black"> ${feb} </li>`;
+            numberList += `<li class="bg-white text-black d-flex align-items-center justify-content-center"> ${feb} </li>`;
 
             
         }
         else if( i %3 === 0){
             console.log("Fizz")
-            numberList += `<li class="bg-danger "> ${fz} </li>`
+            numberList += `<li class="bg-danger d-flex align-items-center justify-content-center "> ${fz} </li>`
 
         }
         else if( i %5 === 0){
             console.log("Buzz")
-            numberList += `<li class="bg-success"> ${bz} </li>`
+            numberList += `<li class="bg-success d-flex align-items-center justify-content-center"> ${bz} </li>`
         }
         else{
             console.log(i)
-            numberList += `<li class="bg-info text-black"> ${i} </li>`
+            numberList += `<li class="bg-info text-black d-flex align-items-center justify-content-center"> ${i} </li>`
         }
         
         

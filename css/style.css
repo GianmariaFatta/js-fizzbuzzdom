@@ -1,13 +1,12 @@
 
+body{
+    background-color: mediumblue;
+}
 
 .container{
     margin:0 auto;
-    border: 2px dashed black;
-}
-
-
-.FizzBuzz {
-    flex-wrap: wrap;
+    /* border: 2px dashed black; */
+    gap:5px
 
 }
 
@@ -18,12 +17,37 @@ ul li{
     color:white;
     text-align: center;
     list-style-type: none;
-    gap: 5px;
-    border: 1px dashed yellow;
-    width: calc(100% / 6 );
-    height:150px;
-    margin:5px;
+    /* gap: 5px; */
+    border: 5px solid white;
+    min-width: calc(100% / 5 );
+    height:250px;
+    /* margin:5px; */
     vertical-align: middle;
-    padding-top: 60px;
 
 }
+
+ul li:hover{
+    transform: scale(1.3);
+    animation: up;
+    cursor: pointer;
+    filter: brightness(1.5);
+    box-shadow: 0px 0px 10px 1px;
+    font-size: 40px;
+    
+}
+
+h1{
+    font-size: 80px;
+}
+
+.hithere {
+  animation: hithere 1s ease infinite;
+}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-5deg) scale(1.2); }
+  50% { transform: rotate(5deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+
